@@ -8,12 +8,15 @@
 <script>
 export default {
   name: "SectionHeader",
-  props: ["description", "title"],
-  data() {
-    return {
-      description: "Description",
-      title: "Title"
-    };
+  props: {
+    description: {
+      default: "Description",
+      type: String
+    },
+    title: {
+      default: "Title",
+      type: String
+    }
   }
 };
 </script>
@@ -22,6 +25,8 @@ export default {
 header p {
   position: relative;
   color: #999999;
+  margin: 0 auto;
+  width: 80rem;
 }
 p {
   text-transform: uppercase;
