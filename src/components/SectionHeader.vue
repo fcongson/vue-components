@@ -22,11 +22,14 @@ export default {
 </script>
 
 <style scoped>
+.align-center {
+  text-align: center;
+}
 header p {
   position: relative;
   color: #999999;
   margin: 0 auto;
-  width: 80rem;
+  width: 80%;
 }
 p {
   text-transform: uppercase;
@@ -35,7 +38,6 @@ p {
   margin: 0 0 0.5rem 0;
   padding: 0 0 1rem 0;
   letter-spacing: 0.25rem;
-  text-align: center;
 }
 p:after {
   content: "";
@@ -54,6 +56,5 @@ h2 {
   font-weight: 300;
   line-height: 1.5;
   margin: 0 0 1rem 0;
-  text-align: center;
 }
 </style>
