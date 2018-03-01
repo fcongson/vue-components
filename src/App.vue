@@ -25,7 +25,7 @@
     <pre><code>&lt;SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" image="url(./assets/images/bg.jpg)"/&gt;</code></pre>
     <h2>preview</h2>
     <div class="component-preview">
-    <SectionDivider description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" image="url(./assets/images/bg.jpg)"/>
+    <SectionDivider description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" :image="bgJpg"/>
     </div>
     </div>
   </div>
@@ -36,12 +36,20 @@
 import SectionHeader from "./components/SectionHeader";
 import SectionDivider from "./components/SectionDivider";
 
+// asset images
+import bgJpg from "./assets/images/bg.jpg"
+
 export default {
   name: "App",
   components: {
     // HelloWorld,
     SectionHeader,
     SectionDivider
+  },
+  data() {
+    return {
+      bgJpg: bgJpg
+    }
   }
 };
 </script>

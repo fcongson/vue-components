@@ -1,5 +1,4 @@
 <template>
-  <!-- <section> -->
   <section :style="{backgroundImage: image}">
     <div class="inner">
       <SectionHeader :description="description" :title="title"/>
@@ -36,7 +35,6 @@ export default {
 section {
   background-color: #000;
   color: #bfbfbf;
-  /* background-image: url(../assets/images/bg.jpg); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
