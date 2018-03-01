@@ -6,28 +6,28 @@
     <!-- Section Header -->
     <hr/>
     <div class="component-section">
-    <h1>Section Header</h1>
-    <p>Section header with customizable <code><b>title</b></code> and <code><b>description</b></code></p>
-    <h2>usage</h2>
-    <pre><code>&lt;SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo"/&gt;</code></pre>
-    <h2>preview</h2>
-    <div class="component-preview">
-    <SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo"/>
-    </div>
+      <h1>Section Header</h1>
+      <p>Section header with customizable <code><b>title</b></code> and <code><b>description</b></code></p>
+      <h2>usage</h2>
+      <pre><code>&lt;SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo"/&gt;</code></pre>
+      <h2>preview</h2>
+      <div class="component-preview">
+        <SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo"/>
+      </div>
     </div>
 
     <!-- Section Divider -->
     <hr/>
     <div class="component-section">
-    <h1>Section Divider</h1>
-    <p>Section header with customizable <code><b>title</b></code>, <code><b>description</b></code>, and <code><b>image</b></code></p>
-    <p><i>*note: the static path is needed when using images with webpack</i></p>
-    <h2>usage</h2>
-    <pre><code>&lt;SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" image="./assets/images/bg.jpg"/&gt;</code></pre>
-    <h2>preview</h2>
-    <div class="component-preview">
-    <SectionDivider description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" :image="bgJpg"/>
-    </div>
+      <h1>Section Divider</h1>
+      <p>Section header with customizable <code><b>title</b></code>, <code><b>description</b></code>, and <code><b>image</b></code></p>
+      <p><i>*note: the static path is needed when using images with webpack</i></p>
+      <h2>usage</h2>
+      <pre><code>&lt;SectionHeader description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" image="./assets/images/bg.jpg"/&gt;</code></pre>
+      <h2>preview</h2>
+      <div class="component-preview">
+        <SectionDivider description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" :image="bgJpg"/>
+      </div>
     </div>
   </div>
 </template>
