@@ -1,5 +1,5 @@
 <template>
-  <section :style="{backgroundImage: image}">
+  <section :style="{backgroundImage: 'url('+image+')'}">
     <div class="inner">
       <SectionHeader :description="description" :title="title"/>
     </div>
