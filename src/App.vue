@@ -29,6 +29,21 @@
         <SectionDivider description="Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna" title="Morbi maximus justo" :image="bgJpg"/>
       </div>
     </div>
+
+    <!-- Box -->
+    <hr/>
+    <div class="component-section">
+      <h1>Box</h1>
+      <p>Box with customizable <code><b>title</b></code>, <code><b>description</b></code>, <code><b>image</b></code>, <code><b>content</b></code>, <code><b>buttonText</b></code>, and <code><b>buttonUrl</b></code></p>
+      <p><i>*note: the static path is needed when using images with webpack</i></p>
+      <h2>usage</h2>
+      <pre><code>&lt;Box description="maecenas sapien feugiat ex purus" title="Lorem ipsum dolor" image="./assets/images/pic02.jpg" content="Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada." buttonText="Learn More" buttonUrl="#"/&gt;</code></pre>
+      <h2>preview</h2>
+      <div class="component-preview dark">
+        <Box description="maecenas sapien feugiat ex purus" title="Lorem ipsum dolor" :image="pic02" content="Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada." buttonText="Learn More" buttonUrl="#"/>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -36,20 +51,24 @@
 // import HelloWorld from "./components/HelloWorld";
 import SectionHeader from "./components/SectionHeader";
 import SectionDivider from "./components/SectionDivider";
+import Box from "./components/Box";
 
 // asset images
 import bgJpg from "./assets/images/bg.jpg";
+import pic02 from "./assets/images/pic02.jpg";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     SectionHeader,
-    SectionDivider
+    SectionDivider,
+    Box
   },
   data() {
     return {
-      bgJpg: bgJpg
+      bgJpg: bgJpg,
+      pic02: pic02
     };
   }
 };
@@ -71,6 +90,7 @@ h2 {
 pre {
   padding: 20px;
   background: #eeeeee;
+  overflow: auto;
 }
 .component-section {
   margin: 40px 0px 40px 0px;
@@ -79,5 +99,8 @@ pre {
   border-style: solid;
   border-width: 1px;
   border-color: #eeeeee;
+}
+.component-preview.dark {
+  background-color: #eeeeee;
 }
 </style>
